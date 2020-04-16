@@ -6,7 +6,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingClassifier
- 
+#
 def _filling_numeric_columns(dt, colum):
     mean = dt[colum].mean()
     mean = math.floor(mean)
