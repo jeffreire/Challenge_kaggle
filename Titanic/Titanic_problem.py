@@ -13,8 +13,8 @@ def _filling_numeric_columns(dt, colum):
     dt.update(dt[colum].fillna(mean))
 
 # obtendo os dados do arquivo
-train = pd.read_csv('Challenge_kaggle/Data/train.csv')
-test = pd.read_csv('Challenge_kaggle/Data/test.csv')
+train = pd.read_csv('Data/train.csv')
+test = pd.read_csv('Data/test.csv')
 
 # removendo as colunas inrrelevantes
 train.drop(['Name', 'Ticket', 'Cabin'], axis=1, inplace= True)
